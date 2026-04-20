@@ -1,11 +1,16 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import project1 from "../../public/projects/project1.jpg";
+import project2 from "../../public/projects/project2.png";
+import project3 from "../../public/projects/project3.png";
+import project4 from "../../public/projects/project4.jpg";
+
 const projects = [
   {
     title: "Zambeel",
     description:
       "Zambeel empowers brands, sellers, and dropshippers worldwide to build and grow profitable e-commerce businesses across the UAE, Saudi Arabia, Kuwait, and Qatar — with everything from product sourcing to last-mile delivery, all in one place.",
-    image: "/public/projects/project1.jpg",
+    image: project1,
     tags: ["React", "Tailwind CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -14,7 +19,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A complete e-commerce solution built for modern businesses. Manage your products, process payments securely, track inventory in real time, and make data-driven decisions — all from one powerful dashboard.",
-    image: "/public/projects/project2.png",
+    image: project2,
     tags: ["React", "JavaScript", "Tailwind"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -23,7 +28,7 @@ const projects = [
     title: "Food Website",
     description:
       "A visually stunning and user-friendly food website that offers a seamless browsing experience, showcasing delicious recipes, restaurant reviews, and culinary inspiration.",
-    image: "/public/projects/project3.png",
+    image: project3,
     tags: ["React", "JavaScript", "Tailwind CSS"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -32,7 +37,7 @@ const projects = [
     title: "Flavor Fusion",
     description:
       "Flavor Fusion brings together the best tastes from around the world, creating a unique dining experience where every dish is crafted with passion and creativity.",
-    image: "/public/projects/project4.jpg",
+    image: project4,
     tags: ["React", "Tailwind CSS", "Redux"],
     link: "#",
     github: "https://github.com/awais4511",
