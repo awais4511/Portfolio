@@ -74,8 +74,8 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 pt-32 pb-20 relative z-10">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -135,9 +135,9 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative max-w-md mx-auto">
+            <div className="relative max-w-lg mx-auto w-full">
               <div
                 className="absolute inset-0 
               rounded-3xl bg-gradient-to-br 
