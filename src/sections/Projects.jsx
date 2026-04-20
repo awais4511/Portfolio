@@ -5,7 +5,7 @@ const projects = [
     title: "Zambeel",
     description:
       "Zambeel empowers brands, sellers, and dropshippers worldwide to build and grow profitable e-commerce businesses across the UAE, Saudi Arabia, Kuwait, and Qatar — with everything from product sourcing to last-mile delivery, all in one place.",
-    image: "/src/assets/preview.jpg",
+    image: "/public/projects/project1.jpg",
     tags: ["React", "Tailwind CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A complete e-commerce solution built for modern businesses. Manage your products, process payments securely, track inventory in real time, and make data-driven decisions — all from one powerful dashboard.",
-    image: "/src/assets/ecomm.png",
+    image: "/public/projects/project2.jpg",
     tags: ["React", "JavaScript", "Tailwind"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -23,7 +23,7 @@ const projects = [
     title: "Food Website",
     description:
       "A visually stunning and user-friendly food website that offers a seamless browsing experience, showcasing delicious recipes, restaurant reviews, and culinary inspiration.",
-    image: "/src/assets/food_website.png",
+    image: "/public/projects/project3.jpg",
     tags: ["React", "JavaScript", "Tailwind CSS"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -32,7 +32,7 @@ const projects = [
     title: "Flavor Fusion",
     description:
       "Flavor Fusion brings together the best tastes from around the world, creating a unique dining experience where every dish is crafted with passion and creativity.",
-    image: "/src/assets/restruent.jpg",
+    image: "/public/projects/project4.jpg",
     tags: ["React", "Tailwind CSS", "Redux"],
     link: "#",
     github: "https://github.com/awais4511",
