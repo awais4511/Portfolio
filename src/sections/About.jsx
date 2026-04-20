@@ -49,17 +49,20 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I’m a passionate software engineer with over 1 year of
+                experience specializing in modern frontend technologies. I have
+                hands-on experience with React, Angular, and React Native,
+                allowing me to build dynamic web and cross-platform mobile
+                applications. I focus on creating scalable, efficient, and
+                user-friendly interfaces using component-based architecture and
+                best practices.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I specialize in React, Angular, and React Native, building
+                everything from modern web applications to scalable
+                cross-platform mobile solutions. My approach focuses on creating
+                efficient, maintainable, and high-performance applications using
+                best practices and clean architecture.
               </p>
               <p>
                 When I'm not coding, you'll find me exploring new technologies,
@@ -70,9 +73,11 @@ export const About = () => {
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My mission as a developer is to build efficient, scalable, and
+                user-focused applications that go beyond basic functionality —
+                delivering clean, maintainable code and creating digital
+                experiences that are both reliable for users and easy for
+                developers to work with."
               </p>
             </div>
           </div>

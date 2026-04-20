@@ -2,40 +2,40 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Zambeel",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+      "Zambeel empowers brands, sellers, and dropshippers worldwide to build and grow profitable e-commerce businesses across the UAE, Saudi Arabia, Kuwait, and Qatar — with everything from product sourcing to last-mile delivery, all in one place.",
+    image: "/src/assets/preview.jpg",
+    tags: ["React", "Tailwind CSS", "JavaScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/awais4511",
   },
   {
     title: "E-Commerce Platform",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+      "A complete e-commerce solution built for modern businesses. Manage your products, process payments securely, track inventory in real time, and make data-driven decisions — all from one powerful dashboard.",
+    image: "/src/assets/ecomm.png",
+    tags: ["React", "JavaScript", "Tailwind"],
     link: "#",
-    github: "#",
+    github: "https://github.com/awais4511",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Food Website",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+      "A visually stunning and user-friendly food website that offers a seamless browsing experience, showcasing delicious recipes, restaurant reviews, and culinary inspiration.",
+    image: "/src/assets/food_website.png",
+    tags: ["React", "JavaScript", "Tailwind CSS"],
     link: "#",
-    github: "#",
+    github: "https://github.com/awais4511",
   },
   {
-    title: "Project Management Tool",
+    title: "Flavor Fusion",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+      "Flavor Fusion brings together the best tastes from around the world, creating a unique dining experience where every dish is crafted with passion and creativity.",
+    image: "/src/assets/restruent.jpg",
+    tags: ["React", "Tailwind CSS", "Redux"],
     link: "#",
-    github: "#",
+    github: "https://github.com/awais4511",
   },
 ];
 

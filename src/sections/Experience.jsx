@@ -1,38 +1,20 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2024 — Present",
+    role: "Frontend Developer",
+    company: "Enigmatix pvt. Ltd.",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Designed and developed 20+ responsive UI components using Angular.js, reducing design-to-code time by ~25%. Integrated backend APIs to deliver real-time data updates, enabling immediate decision-making for end users. Ensured cross-device compatibility through responsive styling with Tailwind CSS, broadening accessibility across devices. Handled complex asynchronous data fetching and error handling, improving app reliability.",
+    technologies: ["Angular.js", "Tailwind CSS", "JavaScript", "REST APIs"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2025 — 2026",
+    role: "Junior Frontend Developer",
+    company: "Enigmatix pvt. Ltd.",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
-    current: false,
-  },
-  {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
-    description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
-  },
-  {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Integrated RESTful APIs and handled asynchronous data fetching, ensuring smooth and reliable data flow across the app. Implemented screen navigation using React Navigation, enabling seamless transitions and improving user experience. Maintained version control using Git, supporting smooth team collaboration and structured code management. Conducted testing and debugging across multiple devices, delivering a stable, bug-free production release.",
+    technologies: ["React", "JavaScript", "Git", "React Navigation"],
     current: false,
   },
 ];
@@ -47,7 +29,7 @@ export const Experience = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mx-auto mb-16 text-center">
           <span
             className="text-secondary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
