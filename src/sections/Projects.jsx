@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A complete e-commerce solution built for modern businesses. Manage your products, process payments securely, track inventory in real time, and make data-driven decisions — all from one powerful dashboard.",
-    image: "/public/projects/project2.jpg",
+    image: "/public/projects/project2.png",
     tags: ["React", "JavaScript", "Tailwind"],
     link: "#",
     github: "https://github.com/awais4511",
@@ -23,7 +23,7 @@ const projects = [
     title: "Food Website",
     description:
       "A visually stunning and user-friendly food website that offers a seamless browsing experience, showcasing delicious recipes, restaurant reviews, and culinary inspiration.",
-    image: "/public/projects/project3.jpg",
+    image: "/public/projects/project3.png",
     tags: ["React", "JavaScript", "Tailwind CSS"],
     link: "#",
     github: "https://github.com/awais4511",
