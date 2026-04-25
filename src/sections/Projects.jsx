@@ -4,6 +4,11 @@ import project1 from "../../public/projects/project1.jpg";
 import project2 from "../../public/projects/project2.png";
 import project3 from "../../public/projects/project3.png";
 import project4 from "../../public/projects/project4.jpg";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
@@ -45,25 +50,82 @@ const projects = [
 ];
 
 export const Projects = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Header animation
+      gsap.fromTo(
+        '.projects-header',
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 70%',
+          },
+          ease: 'power3.out',
+        }
+      );
+
+      // Project cards animation
+      gsap.fromTo(
+        '.project-card',
+        { opacity: 0, y: 50, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.7,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 60%',
+          },
+          ease: 'back.out',
+        }
+      );
+
+      // Image hover zoom effect
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach((card) => {
+        const img = card.querySelector('img');
+        if (img) {
+          card.addEventListener('mouseenter', () => {
+            gsap.to(img, { scale: 1.1, duration: 0.6, overwrite: 'auto' });
+          });
+          card.addEventListener('mouseleave', () => {
+            gsap.to(img, { scale: 1, duration: 0.6, overwrite: 'auto' });
+          });
+        }
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section ref={sectionRef} id="projects" className="py-32 relative overflow-hidden">
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mx-auto max-w-3xl mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
+          <span className="projects-header text-secondary-foreground text-sm font-medium tracking-wider uppercase">
             Featured Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+          <h2 className="projects-header text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
             Projects that
             <span className="font-serif italic font-normal text-white">
               {" "}
               make an impact.
             </span>
           </h2>
-          <p className="text-muted-foreground animate-fade-in animation-delay-200">
+          <p className="projects-header text-muted-foreground">
             A selection of my recent work, from complex web applications to
             innovative tools that solve real-world problems.
           </p>
@@ -74,8 +136,7 @@ export const Projects = () => {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
-              style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+              className="project-card group glass rounded-2xl overflow-hidden md:row-span-1"
             >
               {/* Image */}
               <div className="relative overflow-hidden aspect-video">
