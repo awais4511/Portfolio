@@ -6,7 +6,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-
 /**
  * Scroll Reveal Animation - Fades in and slides elements as they enter viewport
  */
