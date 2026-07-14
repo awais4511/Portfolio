@@ -580,13 +580,13 @@ export const activeNavLink = (navSelector, linkSelector) => {
         if (link.getAttribute('href') === `#${current}`) {
           link.classList.add('active');
           gsap.to(link, {
-            color: '#20B2A6',
+            color: 'var(--color-primary)',
             duration: 1,
             delay: 1,
           });
         } else {
           gsap.to(link, {
-            color: '#ffffff',
+            color: 'var(--color-foreground)',
             duration: 1,
             delay: 1,
           });

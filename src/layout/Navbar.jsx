@@ -65,17 +65,17 @@ export const Navbar = () => {
         }
       );
 
-      // Hover effect on logo
+      // Hover effect on logo (use primary color)
       logoRef.current?.addEventListener('mouseenter', () => {
         gsap.to(logoRef.current, {
-          textShadow: '0 0 20px rgba(32, 178, 166, 0.6)',
+          textShadow: '0 0 20px rgba(233,101,41,0.6)',
           duration: 0.3,
         });
       });
 
       logoRef.current?.addEventListener('mouseleave', () => {
         gsap.to(logoRef.current, {
-          textShadow: '0 0 0px rgba(32, 178, 166, 0)',
+          textShadow: '0 0 0px rgba(233,101,41,0)',
           duration: 0.3,
         });
       });
@@ -85,7 +85,7 @@ export const Navbar = () => {
       links.forEach((link) => {
         link.addEventListener('mouseenter', () => {
           gsap.to(link, {
-            color: '#20B2A6',
+            color: 'var(--color-primary)',
             duration: 0.2,
             overwrite: 'auto',
           });
